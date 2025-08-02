@@ -1,0 +1,135 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* light grey */
+  color: #333; /* dark grey text */
+}
+
+/* Header */
+header {
+  background-color: #b00020; /* deep red */
+  color: white;
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+/* Top navbar bar */
+.navbar {
+  background-color: #8b0000; /* darker red for contrast */
+  padding: 0.5rem 1rem;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.navbar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffcdd2; /* light red on hover */
+}
+/* Reset */
+.nav-menu, .dropdown {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top-level nav */
+.nav-menu {
+  display: flex;
+  justify-content: center;
+  background-color: #8b0000;
+  padding: 0.5rem 1rem;
+}
+
+.nav-menu > li {
+  position: relative;
+  margin: 0 1rem;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+  display: block;
+}
+
+/* Dropdown submenu */
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  top: 100%;
+  left: 0;
+  min-width: 200px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.dropdown li a {
+  color: #333;
+  padding: 0.5rem 1rem;
+  white-space: nowrap;
+}
+
+.dropdown li a:hover {
+  background-color: #eee;
+}
+
+/* Show submenu on hover */
+.nav-menu li:hover > .dropdown {
+  display: block;
+}
+
+
+/* Fujian Association header */
+.site-title {
+  background-color: #b00020;
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem 1.5rem;
+  border-bottom: 3px solid #ccc;
+}
+
+.site-title h1 {
+  font-size: 2rem;
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+
+/* Main content */
+main {
+  padding: 2rem;
+  background-color: #ffffff;
+  max-width: 900px;
+  margin: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Section titles */
+main h2 {
+  color: #b00020;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: #e0e0e0; /* light grey */
+  color: #333;
+}
