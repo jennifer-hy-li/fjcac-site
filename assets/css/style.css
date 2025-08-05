@@ -345,3 +345,8 @@ td {
   border-radius: 6px;
   display: inline-block;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
