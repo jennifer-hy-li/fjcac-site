@@ -95,18 +95,19 @@ header {
 
 
 /* Fujian Association header */
-.site-title {
-  background-color: #b00020;
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* or 'space-between' if you want left-aligned logo and right-aligned title */
+  gap: 1rem;
+  padding: 1rem 0;
+  background-color: #b4001d; /* or your desired red */
   color: white;
-  text-align: center;
-  padding: 2rem 1rem 1.5rem;
-  border-bottom: 3px solid #ccc;
 }
 
-.site-title h1 {
-  font-size: 2rem;
-  margin: 0;
-  letter-spacing: 1px;
+.site-header .logo {
+  height: 60px; /* Adjust based on what fits visually */
+  width: auto;
 }
 
 
@@ -134,24 +135,57 @@ footer {
   color: #333;
 }
 
+/* Wrap the section inside the existing white container */
+#promo-row.container {
+  padding-top: 0.5rem;   /* Reduce padding at top */
+  padding-bottom: 1rem;
+  margin-top: 0;         /* Ensure no margin from top */
+}
+
+
+/* Fix the image row layout */
+.promo-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+  max-width: 100%;
+}
+
+/* Uniform image sizing */
+.promo-container img {
+  width: calc(33.33% - 0.67rem); /* Even 3 per row with gap */
+  height: 160px; /* Smaller height */
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.1);
+}
+
+
 /* Carousel styles */
+/* Carousel container */
 .carousel-container {
   position: relative;
-  max-width: 100%;
-  max-height: 80vh; /* fits vertically on screen */
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  aspect-ratio: 3 / 4; /* Forces a consistent portrait flyer size */
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f5f5f5;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  background-color: #f0f0f0;
 }
 
+/* Each image in carousel */
 .carousel-image {
-  display: none;
   max-height: 100%;
   max-width: 100%;
-  object-fit: contain; /* ✅ No cropping, full flyer shown */
-  transition: opacity 0.5s ease;
+  object-fit: contain;
+  display: none;
+  transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-image.active {
@@ -163,17 +197,23 @@ footer {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  font-size: 2rem;
-  background: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.5);
   color: white;
   border: none;
+  font-size: 2rem;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  z-index: 2;
+  z-index: 1;
 }
 
-.carousel-btn.prev { left: 10px; }
-.carousel-btn.next { right: 10px; }
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
 
 
 /* Table styles */
@@ -283,3 +323,25 @@ td {
   text-decoration: underline;
 }
 
+/* Main content container */
+.container {
+  background-color: white;
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Image wrapper */
+.member-image-wrapper {
+  text-align: center;
+  overflow-x: hidden; /* prevents accidental overflow */
+}
+
+.member-image-wrapper img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  display: inline-block;
+}
