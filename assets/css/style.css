@@ -375,3 +375,16 @@ html {
 .org-table tr:nth-child(even) {
   background-color: #fafafa;
 }
+
+.header-link {
+  color: #b00020;
+  text-decoration: none;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.header-link:hover {
+  color: #560010; /* light red on hover */
+}
