@@ -244,3 +244,42 @@ td {
   line-height: 1.6;
 }
 
+#contact {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-top: 2px solid #ccc;
+}
+
+#contact h2 {
+  color: #b00020;
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.contact-block {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.contact-block h3 {
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+.contact-block p {
+  margin: 0.5rem 0;
+}
+
+.contact-block a {
+  color: #b00020;
+  text-decoration: none;
+}
+
+.contact-block a:hover {
+  text-decoration: underline;
+}
+
