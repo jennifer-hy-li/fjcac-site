@@ -12,7 +12,8 @@ body {
 header {
   background-color: #b00020; /* deep red */
   color: white;
-  padding: 1.5rem 1rem;
+  padding: 0rem 1rem;
+  padding-top: 1.2rem;
   text-align: center;
 }
 
@@ -106,7 +107,7 @@ header {
 }
 
 .site-header .logo {
-  height: 60px; /* Adjust based on what fits visually */
+  height: 70px; /* Adjust based on what fits visually */
   width: auto;
 }
 
