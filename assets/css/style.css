@@ -245,6 +245,10 @@ table th {
   max-height: 80px;
 }
 
+#about p {
+  text-indent: 2rem;
+}
+
 /* Quick links */
 .quick-links {
   list-style: none;
@@ -414,7 +418,7 @@ html {
 }
 
 
-.mission-container {
+.article-container {
   max-width: 900px;
   margin: 2em auto;
   padding: 2em;
@@ -422,27 +426,28 @@ html {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   font-size: 1.05rem;
-  line-height: 1.75;
+  line-height: 1.5;
 }
 
-.mission-container h1 {
+.article-container h1 {
   text-align: center;
   font-size: 1.8rem;
   color: #900;
 }
 
-.mission-container h2 {
+.article-container h2 {
   font-size: 1.2rem;
   color: #444;
   border-bottom: none;
 }
 
-.mission-container h3 {
+.article-container h3 {
   font-size: 1rem;
   color: rgb(120, 120, 120);
 }
 
-.mission-container p {
-  margin-top: 1em;
+.article-container p {
   text-decoration: none;
+  padding: none;
+  margin: none;
 }
